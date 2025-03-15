@@ -94,7 +94,7 @@ body {
     line-height: 1.6;
     font-size: 16px;
 }
-
+/* Button */
 .color-button {
     padding: 12px 24px;
     background-color: #555;
@@ -111,4 +111,62 @@ body {
 
 .color-button:hover {
     background-color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Icons box */
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+/* Social Links */
+.social-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Style for social icons */
+.social-icons img {
+    width: 30px;  /* Fixed size */
+    height: 30px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 1px; /* Separation margin */
+    border-radius: 5px; /* Rounded corners */
+    object-fit: contain; /* Prevents distortion */
+}
+
+/* Hover effect */
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: #A18262; /* Click color */
+}
+
+/* Loader */
+.loader-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #debd3a; /* Color loader bar */
+    z-index: 1000;
+    transition: width 0.3s ease, opacity 0.5s ease-out;
 }
