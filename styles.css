@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8dcd1;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.navigation {
+    display: flex;
+    gap: 30px;
+}
+
+/*navigation links*/
+.nav-item {
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    height: 100vh;
+    padding-top: 60px; /* Space for the fixed header */
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero h3:first-of-type {
+    font-weight: normal;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    color: #555;
+    max-width: 500px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.color-button {
+    padding: 12px 24px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.color-button:hover {
+    background-color: #333;
+}
